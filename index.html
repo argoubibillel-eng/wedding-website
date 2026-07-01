@@ -1,65 +1,66 @@
-<!doctype html>
-<html class="no-js" lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حفل زفاف بلال وعقيلة</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Cairo:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- استيراد Bootstrap وخط عربي أنيق -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body, h1, h2, h3 { font-family: 'Cairo', sans-serif !important; text-align: center; }
-        .btn-maps { background-color: #F14E95; color: #fff !important; padding: 12px 30px; border-radius: 30px; }
+        body { font-family: 'Cairo', sans-serif; text-align: center; background-color: #fdfbf7; color: #5a5a5a; }
+        
+        /* قسم الترحيب والعداد */
+        .hero-section { padding: 80px 20px; background: linear-gradient(135deg, #fdfbf7 0%, #e9ecef 100%); border-bottom: 2px solid #d4a373; }
+        .hero-section h1 { font-size: 3.5rem; color: #8b5e3c; font-weight: 700; }
+        .hero-section h2 { font-size: 1.5rem; color: #d4a373; margin-bottom: 30px; }
+        .countdown { display: flex; justify-content: center; gap: 20px; margin-top: 40px; }
+        .countdown-box { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 100px; }
+        .countdown-number { font-size: 2.5rem; font-weight: 700; color: #8b5e3c; }
+        .countdown-label { font-size: 0.9rem; color: #888; }
+
+        /* قسم البرنامج (على شكل الصورة المرجعية) */
+        .program-section { padding: 80px 20px; }
+        .section-title { font-size: 2.5rem; color: #8b5e3c; margin-bottom: 60px; position: relative; display: inline-block; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 3px; background: #d4a373; margin: 10px auto 0; }
+        
+        .timeline { position: relative; max-width: 800px; margin: 0 auto; padding: 20px 0; }
+        .timeline::before { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: #d4a373; margin-left: -1px; }
+        
+        .timeline-item { position: relative; width: 50%; padding: 20px 40px; }
+        .timeline-item:nth-child(odd) { left: 0; text-align: left; }
+        .timeline-item:nth-child(even) { left: 50%; text-align: right; }
+        
+        .timeline-icon { position: absolute; top: 30px; width: 40px; height: 40px; background: #fff; border: 2px solid #d4a373; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #d4a373; z-index: 1; }
+        .timeline-item:nth-child(odd) .timeline-icon { right: -20px; }
+        .timeline-item:nth-child(even) .timeline-icon { left: -20px; }
+        
+        .timeline-content { padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-right: 3px solid #d4a373; }
+        .timeline-item:nth-child(odd) .timeline-content { border-left: 3px solid #d4a373; border-right: none; }
+        
+        .event-date { font-size: 0.9rem; color: #888; }
+        .event-time { font-weight: 700; color: #8b5e3c; font-size: 1.2rem; }
+        .event-location { margin-top: 10px; font-size: 0.95rem; color: #555; font-weight: bold; }
+        .map-btn { display: inline-block; margin-top: 15px; padding: 5px 15px; background-color: #fdfbf7; border: 1px solid #d4a373; color: #d4a373; text-decoration: none; border-radius: 15px; font-size: 0.8rem; transition: all 0.3s; }
+        .map-btn:hover { background-color: #d4a373; color: #fff; }
+
+        /* قسم تأكيد الحضور (RSVP) */
+        .rsvp-section { padding: 80px 20px; background-color: #e9ecef; }
+        .form-control { border-radius: 20px; }
+        .btn-rsvp { background-color: #8b5e3c; color: white; padding: 10px 30px; border-radius: 20px; border: none; }
     </style>
 </head>
 <body>
-    <header id="fh5co-header" class="fh5co-cover" style="background-image:url(images/img_bg_3.jpg);" data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
+
+    <!-- 1. قسم الترحيب والعداد -->
+    <header class="hero-section">
         <div class="container">
-            <div class="display-t">
-                <div class="display-tc">
-                    <h1>بِلال &amp; عقيلة</h1>
-                    <h2>نحن بصدد إقامة حفل زفافنا</h2>
-                    <div class="simply-countdown simply-countdown-one"></div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div id="fh5co-couple">
-        <div class="container">
-            <div class="fh5co-heading">
-                <h2>بارك الله لهما وبارك عليهما وجمع بينهما في خير</h2>
-                <h3>يتشرف عائلتا العرقوبي بدعوتكم لحضور حفل زفاف نجليهما</h3>
-            </div>
-            <div class="couple-wrap" style="display: flex; justify-content: center; gap: 20px;">
-                <div class="couple-half">
-                    <img src="images/groom.jpg" alt="العريس" class="img-responsive">
-                    <h3>بِلال</h3>
-                </div>
-                <div class="couple-half">
-                    <img src="images/bride.jpg" alt="العروس" class="img-responsive">
-                    <h3>عقيلة</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="fh5co-event">
-        <div class="container">
-            <div class="event-wrap" style="background: rgba(255,255,255,0.9); padding: 30px;">
-        
-                <p>السبت 04 سبتمبر 2027 | 08:00 مساءً</p>
-
-            </div>
-        </div>
-    </div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/simplyCountdown.js"></script>
-    <script>
-        var d = new Date('2027-09-04T20:00:00');
-        simplyCountdown('.simply-countdown-one', { year: d.getFullYear(), month: d.getMonth() + 1, day: d.getDate() });
-    </script>
-</body>
-</html>
+            <h1>بلال وعقيلة</h1>
+            <h2>يتشرفان بدعوتكم لحضور حفل زفافهما</h2>
+            <p class="lead">ننتظركم بفارغ الصبر لمشاركتنا فرحة العمر</p>
+            
+            <!-- عداد تنازلي -->
+            <div class="countdown" id="countdown">
+                <div class="countdown-box"><div class="countdownNormally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.
