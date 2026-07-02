@@ -9,17 +9,25 @@
     <style>
         body { 
             font-family: 'Amiri', serif; 
-            background-color: #f5f5dc; /* لون البيج */
+            background-color: #f5f5dc; 
             color: #4a4a4a; 
             text-align: center;
             padding-bottom: 50px;
         }
         .hero { padding: 40px 20px; }
         .quran-verse { font-size: 1.3rem; color: #8b7355; margin-bottom: 20px; font-weight: bold; }
-        h1 { font-size: 2.8rem; color: #5c4033; margin: 15px 0; }
+        
+        /* الأسماء بنفس خط الآية (Amiri) */
+        .names { 
+            font-family: 'Amiri', serif; 
+            font-size: 3rem; 
+            font-weight: bold;
+            color: #5c4033; 
+            margin: 15px 0; 
+        }
+        
         .intro { font-size: 1.2rem; margin-bottom: 25px; line-height: 1.8; max-width: 600px; margin-left: auto; margin-right: auto; }
         
-        /* تصميم العد التنازلي */
         .countdown-container { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; }
         .time-box { background: #d2b48c; color: white; padding: 10px; border-radius: 10px; min-width: 70px; }
         .time-box span { display: block; font-size: 1.5rem; font-weight: bold; }
@@ -36,12 +44,13 @@
             ﴿مِنَ الْمُؤْمِنِينَ رِجَالٌ صَدَقُوا مَا عَاهَدُوا اللَّهَ عَلَيْهِ ۖ﴾
         </div>
 
-        <h1>Bilel & Akila</h1>
-        
         <div class="intro">
             نحن بصدد إقامة حفل زفافنا، باركَ الله لنا وبارك علينا وجمع بيننا في خير.<br>
-            يتشرف عائلتا العرڨوبي والجبالي بدعوتكم لحضور حفل زفاف نجليهما.
+            يتشرف عائلتا العرڨوبي والجبالي بدعوتكم لحضور حفل زفاف نجليهما:
         </div>
+
+        <!-- الأسماء بخط Amiri -->
+        <div class="names">بلال و عقيلة</div>
 
         <div class="countdown-container" id="timer">
             <div class="time-box"><span id="days">0</span>يوم</div>
