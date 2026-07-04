@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حفل زفاف بلال وعقيلة</title>
+    <title> حفل زفاف  
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
     <style>
@@ -11,25 +11,14 @@
         .hero { padding: 40px 20px; }
         .quran-verse { font-size: 1.4rem; color: #8b7355; margin-bottom: 15px; font-weight: bold; }
         .welcome-text { font-size: 1.2rem; margin-bottom: 10px; color: #5c4033; }
-        
-        /* تزيين اسم العروسين بأسلوب فني ذهبي */
-        .names { 
-            font-size: 4.5rem; 
-            font-weight: bold; 
-            margin: 20px 0; 
-            background: linear-gradient(45deg, #b8860b, #daa520, #b8860b); 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-            letter-spacing: 2px;
-        }
-
+        .names { font-size: 4.5rem; font-weight: bold; margin: 20px 0; background: linear-gradient(45deg, #b8860b, #daa520, #b8860b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); letter-spacing: 2px; }
         .countdown-container { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; }
         .time-box { background: #8b7355; color: white; padding: 10px; border-radius: 10px; min-width: 70px; }
         .time-box span { display: block; font-size: 1.5rem; font-weight: bold; }
-        .card { border: none; background: rgba(255, 255, 255, 0.7); border-radius: 15px; margin: 15px auto; max-width: 400px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        /* تنسيق البطاقة وتوسيط المحتويات */
+        .card { border: none; background: rgba(255, 255, 255, 0.7); border-radius: 15px; margin: 15px auto; max-width: 400px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; }
         .btn-map { background-color: #8b7355; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; display: inline-block; margin-top: 10px; }
-        .qr-code { margin-top: 15px; border: 5px solid white; border-radius: 10px; width: 150px; height: 150px; }
+        .qr-code { margin-top: 15px; border: 5px solid white; border-radius: 10px; width: 160px; height: 160px; }
     </style>
 </head>
 <body>
@@ -39,15 +28,11 @@
             بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
             ﴿مِنَ الْمُؤْمِنِينَ رِجَالٌ صَدَقُوا مَا عَاهَدُوا اللَّهَ عَلَيْهِ﴾
         </div>
-        
         <div class="welcome-text">
             بارك الله لنا وبارك علينا وجمع بيننا في خير.<br>
             يتشرف عائلتا العرقوبي والجبالي بدعوتكم لحضور حفل زفاف نجليهما:
         </div>
-
-        <!-- الاسم بتنسيق ذهبي مزين -->
         <div class="names">بلال وعقيلة</div>
-
         <div class="countdown-container" id="timer">
             <div class="time-box"><span id="days">0</span>يوم</div>
             <div class="time-box"><span id="hours">0</span>ساعة</div>
@@ -61,22 +46,22 @@
         <div class="card">
             <h5>مأدبة العشاء (منزل العروس)</h5>
             <p>2 سبتمبر 2027 - الساعة 8:00 ليلاً</p>
-            <a href="ضع_رابط_خريطة_منزل_العروس_هنا" class="btn-map">موقع منزل العروس</a><br>
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ضع_رابط_خريطة_منزل_العروس_هنا" class="qr-code">
+            <a href="ضع_رابط_خريطة_منزل_العروس_هنا" class="btn-map">موقع منزل العروس</a>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=ضع_رابط_خريطة_منزل_العروس_هنا" class="qr-code">
         </div>
 
         <div class="card">
             <h5>مأدبة العشاء (منزل العريس)</h5>
             <p>3 سبتمبر 2027 - الساعة 8:00 ليلاً</p>
-            <a href="ضع_رابط_خريطة_منزل_العريس_هنا" class="btn-map">موقع منزل العريس</a><br>
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ضع_رابط_خريطة_منزل_العريس_هنا" class="qr-code">
+            <a href="ضع_رابط_خريطة_منزل_العريس_هنا" class="btn-map">موقع منزل العريس</a>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=ضع_رابط_خريطة_منزل_العريس_هنا" class="qr-code">
         </div>
 
         <div class="card">
             <h5>عقد القران والاستقبال</h5>
             <p>قاعة أفراح الجيش الوطني - 4 سبتمبر 2027</p>
-            <a href="ضع_رابط_خريطة_القاعة_هنا" class="btn-map">موقع القاعة</a><br>
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ضع_رابط_خريطة_القاعة_هنا" class="qr-code">
+            <a href="ضع_رابط_خريطة_القاعة_هنا" class="btn-map">موقع القاعة</a>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=ضع_رابط_خريطة_القاعة_هنا" class="qr-code">
         </div>
 
         <div class="card">
