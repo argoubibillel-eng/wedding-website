@@ -4,55 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حفل زفاف بلال وعقيلة</title>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { 
-            font-family: 'Amiri', serif; 
-            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://www.transparenttextures.com/patterns/flowers.png');
-            text-align: center; padding: 20px; color: #4a4a4a; 
-        }
-        .card { background: #fff; border-radius: 20px; padding: 30px; max-width: 450px; margin: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        h2 { color: #8b7355; }
-        .quran { font-style: italic; color: #555; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        .event-item { margin: 20px 0; padding: 10px; border: 1px solid #f0e6d2; border-radius: 10px; }
-        .btn-map { display: inline-block; margin-top: 5px; color: #8b7355; font-weight: bold; text-decoration: none; }
-        audio { width: 100%; margin-top: 15px; }
+        /* (أبقِ على كود الـ CSS الخاص بك كما هو ليحافظ على الخلفية) */
+        body { font-family: 'Amiri', serif; text-align: center; padding: 20px; }
+        .card { background: rgba(255, 255, 255, 0.9); border-radius: 20px; padding: 20px; max-width: 400px; margin: auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .event-details { margin: 15px 0; font-size: 1.1rem; }
+        .audio-player { margin-top: 20px; }
+        audio { width: 100%; }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <div class="quran">
-            "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"
-        </div>
+        <p style="font-style: italic; color: #555;">"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا"</p>
 
         <h2>حفل زفاف بلال وعقيلة</h2>
         <p>4 سبتمبر 2027</p>
-        <p>يتشرف العرقوبي والجبالي بدعوتكم لحضور حفل زفاف نجليهما.<br>بارك الله لهما وجمع بينهما في خير.</p>
+        <p>يتشرف العرقوبي والجبالي بدعوتكم لحضور حفل زفاف نجليهما.</p>
 
-        <div class="event-item">
-            <strong>مأدبة العشاء (منزل العروس):</strong><br> 2 سبتمبر 2027<br>
-            <a href="https://maps.google.com" class="btn-map" target="_blank">📍 موقع منزل العروس</a>
-        </div>
-        <div class="event-item">
-            <strong>مأدبة العشاء (منزل العريس):</strong><br> 3 سبتمبر 2027<br>
-            <a href="https://maps.google.com" class="btn-map" target="_blank">📍 موقع منزل العريس</a>
-        </div>
-        <div class="event-item">
-            <strong>عقد القران والاستقبال:</strong><br> قاعة أفراح الجيش الوطني - 4 سبتمبر 2027<br>
-            <a href="https://maps.google.com" class="btn-map" target="_blank">📍 موقع القاعة</a>
+        <div class="event-details">
+            <p><strong>عشاء العروس:</strong> 2 سبتمبر - <a href="ضع_رابط_الموقع_هنا">الموقع</a></p>
+            <p><strong>عشاء العريس:</strong> 3 سبتمبر - <a href="ضع_رابط_الموقع_هنا">الموقع</a></p>
+            <p><strong>الاستقبال:</strong> 4 سبتمبر - <a href="ضع_رابط_الموقع_هنا">الموقع</a></p>
         </div>
 
-        <p>🎧 استمع إلى أغنيتنا</p>
-        <audio controls autoplay id="myAudio">
-            <source src="wedding.mp3" type="audio/mpeg">
-        </audio>
+        <div class="audio-player">
+            <p>🎧 استمع إلى أغنيتنا الخاصة</p>
+            <audio controls autoplay>
+                <source src="Musique/wedding-song.mp3" type="audio/mpeg">
+            </audio>
+        </div>
     </div>
 
-    <script>
-        window.onload = function() {
-            document.getElementById("myAudio").play().catch(e => console.log("تحتاج للضغط على الشاشة للتشغيل"));
-        };
-    </script>
 </body>
 </html>
