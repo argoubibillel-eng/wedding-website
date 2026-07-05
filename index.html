@@ -5,46 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حفل زفاف بلال وعقيلة</title>
     <style>
-        body { 
-            font-family: 'Amiri', serif; 
-            background: url('1000023041_2.png') no-repeat center center fixed; 
-            background-size: cover; 
-            text-align: center; 
-            padding: 20px; 
+        body {
+            /* 1. استبدل '1000023041.png' باسم ملف الصورة الذي رفعته بالضبط */
+            background: url('1000023041.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Amiri', serif;
+            text-align: center;
+            padding: 20px;
             margin: 0;
         }
-        .card { 
-            background: rgba(255, 255, 255, 0.85); 
-            border-radius: 20px; 
-            padding: 30px; 
-            max-width: 450px; 
-            margin: 50px auto; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            padding: 25px;
+            max-width: 400px;
+            margin: 20px auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
-        h2 { color: #8b7355; font-weight: bold; }
+        h2 { color: #8b7355; }
         .event { margin: 15px 0; padding: 10px; border-bottom: 1px solid #ddd; }
-        .btn-map { color: #8b7355; font-weight: bold; text-decoration: none; }
+        .btn-map { color: #8b7355; font-weight: bold; text-decoration: none; display: block; margin-top: 5px; }
         audio { width: 100%; margin-top: 15px; }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <!-- الآية -->
         <p><em>"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا"</em></p>
 
-        <!-- العنوان والتواريخ -->
         <h2>حفل زفاف بلال وعقيلة</h2>
         <p>4 سبتمبر 2027</p>
         <p>يتشرف العرقوبي والجبالي بدعوتكم لحضور حفل زفاف نجليهما.</p>
 
-        <!-- المواقع -->
-        <div class="event">عشاء العروس (2 سبتمبر): <a href="ضع_رابط_موقع_العروس_هنا" class="btn-map">الموقع</a></div>
-        <div class="event">عشاء العريس (3 سبتمبر): <a href="ضع_رابط_موقع_العريس_هنا" class="btn-map">الموقع</a></div>
-        <div class="event">الاستقبال (4 سبتمبر): <a href="ضع_رابط_القاعة_هنا" class="btn-map">الموقع</a></div>
+        <div class="event">مأدبة العشاء (منزل العروس): 2 سبتمبر <br> <a href="#" class="btn-map">📍 موقع منزل العروس</a></div>
+        <div class="event">مأدبة العشاء (منزل العريس): 3 سبتمبر <br> <a href="#" class="btn-map">📍 موقع منزل العريس</a></div>
+        <div class="event">عقد القران: 4 سبتمبر <br> <a href="#" class="btn-map">📍 موقع القاعة</a></div>
 
-        <!-- الأغنية -->
-        <p>🎧 استمع إلى أغنيتنا</p>
+        <p>🎧 استمع إلى أغنيتنا الخاصة</p>
         <audio id="myAudio" controls autoplay>
             <source src="wedding-song.mp3" type="audio/mpeg">
         </audio>
@@ -52,10 +49,8 @@
 
     <script>
         window.onload = function() {
-            var audio = document.getElementById("myAudio");
-            audio.play().catch(() => console.log("تحتاج للضغط على الصفحة للتشغيل"));
+            document.getElementById("myAudio").play().catch(() => {});
         };
     </script>
-
 </body>
 </html>
