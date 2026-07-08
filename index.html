@@ -22,8 +22,15 @@
 </head>
 <body>
 
-    <audio autoplay loop style="display:none;">
-      <source src="wedding.mp3" type="audio/mpeg">
+    <!-- زر التحكم في الموسيقى -->
+    <div style="position: fixed; bottom: 20px; left: 20px; z-index: 1000;">
+        <button id="musicBtn" onclick="toggleMusic()" style="background: #8b7355; color: white; border: none; padding: 10px 20px; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
+            🎵 تشغيل الموسيقى
+        </button>
+    </div>
+
+    <audio id="myAudio" loop>
+        <source src="wedding.mp3" type="audio/mpeg">
     </audio>
 
     <div class="hero">
@@ -75,6 +82,20 @@
     </div>
 
     <script>
+        // دالة التحكم في الصوت
+        const audio = document.getElementById("myAudio");
+        const btn = document.getElementById("musicBtn");
+        function toggleMusic() {
+            if (audio.paused) {
+                audio.play();
+                btn.innerHTML = "⏸ إيقاف الموسيقى";
+            } else {
+                audio.pause();
+                btn.innerHTML = "🎵 تشغيل الموسيقى";
+            }
+        }
+
+        // كود العداد
         const target = new Date("Sep 4, 2027 20:00:00").getTime();
         setInterval(() => {
             const now = new Date().getTime();
