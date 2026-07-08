@@ -17,12 +17,12 @@
         .time-box span { display: block; font-size: 1.5rem; font-weight: bold; }
         .card { border: none; background: rgba(255, 255, 255, 0.7); border-radius: 15px; margin: 15px auto; max-width: 400px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; }
         .btn-map { background-color: #8b7355; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; display: inline-block; margin-top: 10px; }
+        .btn-confirm { background-color: #25d366; color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; display: inline-block; font-weight: bold; margin-top: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .qr-img { width: 150px; height: 150px; margin-top: 15px; border: 5px solid white; border-radius: 10px; }
     </style>
 </head>
 <body>
 
-    <!-- زر التحكم في الموسيقى -->
     <div style="position: fixed; bottom: 20px; left: 20px; z-index: 1000;">
         <button id="musicBtn" onclick="toggleMusic()" style="background: #8b7355; color: white; border: none; padding: 10px 20px; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
             🎵 تشغيل الموسيقى
@@ -36,13 +36,18 @@
     <div class="hero">
         <div class="quran-verse">
             بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
-            ﴿مِنَ الْمُؤْمِنِينَ رِجَالٌ صَدَقُوا مَا عَاهَدُوا اللَّهَ عَلَيْهِ﴾
+            ﴿وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً﴾
         </div>
         <div class="welcome-text">
             بارك الله لنا وبارك علينا وجمع بيننا في خير.<br>
             يتشرف عائلتا عزيز العرڨوبي وعبد العزيز الجبالي بدعوتكم لحضور حفل زفاف نجليهما:
         </div>
         <div class="names">بلال وعقيلة</div>
+        
+        <div style="margin-bottom: 10px; font-size: 1.2rem; font-weight: bold; color: #8b7355;">
+            الوقت المتبقي على الفرح:
+        </div>
+
         <div class="countdown-container" id="timer">
             <div class="time-box"><span id="days">0</span>يوم</div>
             <div class="time-box"><span id="hours">0</span>ساعة</div>
@@ -79,10 +84,16 @@
             <p>سيدي بوسعيد - 5 سبتمبر 2027 - الساعة 1:00 صباحاً</p>
             <p>بانتظار حضوركم ومشاركتكم فرحتنا.</p>
         </div>
+
+        <!-- زر تأكيد الحضور -->
+        <div style="margin-top: 30px; margin-bottom: 50px;">
+            <a href="https://wa.me/216000000000?text=أؤكد حضوري لحفل زفاف بلال وعقيلة - مع أطيب التمنيات." class="btn-confirm" target="_blank">
+                ✅ تأكيد الحضور عبر واتساب
+            </a>
+        </div>
     </div>
 
     <script>
-        // دالة التحكم في الصوت
         const audio = document.getElementById("myAudio");
         const btn = document.getElementById("musicBtn");
         function toggleMusic() {
@@ -95,7 +106,6 @@
             }
         }
 
-        // كود العداد
         const target = new Date("Sep 4, 2027 20:00:00").getTime();
         setInterval(() => {
             const now = new Date().getTime();
