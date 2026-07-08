@@ -12,6 +12,7 @@
         .names { font-size: 3.5rem; font-weight: bold; margin: 20px 0; color: #8b7355; }
         .card { border: none; background: rgba(255, 255, 255, 0.7); border-radius: 15px; margin: 15px auto; max-width: 400px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
         .btn-map { background-color: #8b7355; color: white; padding: 8px 16px; border-radius: 25px; text-decoration: none; display: inline-block; margin-top: 10px; font-size: 0.9rem; }
+        /* تصغير مشغل الصوت */
         audio { height: 35px; width: 100%; margin-top: 10px; }
     </style>
 </head>
@@ -20,12 +21,11 @@
     <div class="hero">
         <div class="names">حفل زفاف بلال وعقيلة</div>
         
-        <!-- مشغل الأغنية الجديدة -->
+        <!-- مشغل الأغنية يعمل تلقائياً -->
         <div class="card">
             <p>استمع إلى موسيقى الحفل:</p>
             <audio controls autoplay>
-                <!-- قم بتغيير اسم الملف هنا ليتطابق مع اسم أغنيتك الجديدة -->
-                <source src="Musique/new-song.mp3" type="audio/mpeg">
+                <source src="Musique/wedding-song.mp3" type="audio/mpeg">
             </audio>
         </div>
     </div>
